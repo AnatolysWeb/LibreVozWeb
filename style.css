@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+input, textarea, button {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+<!-- script.js -->
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("post-form")?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Publicación enviada (aún falta el backend)");
+    });
+});
